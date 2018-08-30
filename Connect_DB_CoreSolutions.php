@@ -7,8 +7,9 @@
 
 <?php
 //Conexion a la base de datos
-$conexion = mysqli_connect('localhost', 'root', 'leonidas');
-mysql_select_db("core_solutions", $conexion) or die ("No se pudo amigo, vuelve a intentar");
+$conexion = mysqli_connect('localhost', 'root', 'leonidas') or die("Unable to connect to MySQL");  
+echo "";
+mysqli_select_db($conexion, "core_solutions") or die ("No se pudo amigo, vuelve a intentar");
 
 ?>
 <center><table border="1">
